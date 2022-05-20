@@ -15,7 +15,7 @@ Para abrir o CPF em TextDraw, basta ultilizar o comando: /meucpf
 DOF2 e ZCMD
 
 ## Observações
-qualquer dúvida sobre o sistema ou ideia de melhorias, me contacte via discord: Griff#0101
+qualquer dúvida sobre o sistema ou ideia de melhorias, me contatar via discord: Griff#0101
 
 ## Creditos
 
