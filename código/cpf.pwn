@@ -5,151 +5,6 @@
 
 // -- Variaveis -- //
 new PlayerText:CpfTextDraw[MAX_PLAYERS][17];
-
-// Gerar o CPF
-new CPFNumber1[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber2[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber3[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber4[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber5[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber6[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber7[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber8[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber9[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber10[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
-new CPFNumber11[][] =
-{
- {0},
- {1},
- {2},
- {3},
- {4},
- {5},
- {6},
- {7},
- {8},
- {9}
-};
 new Text3D:CPF[MAX_PLAYERS];
 
 main(){}
@@ -426,9 +281,14 @@ stock gerarcpf(playerid)
 	format(pastacpf, sizeof(pastacpf), "CPF/Player/%s.ini", NomeCPF);
 	if(!DOF2_FileExists(pastacpf))
 	{
-		new String[100];
-		format(String, sizeof(String), "%d%d%d.%d%d%d.%d%d%d-%d%d", CPFNumber1[random(sizeof(CPFNumber1))][0], CPFNumber2[random(sizeof(CPFNumber2))][0], CPFNumber3[random(sizeof(CPFNumber3))][0], CPFNumber4[random(sizeof(CPFNumber4))][0], CPFNumber5[random(sizeof(CPFNumber5))][0], CPFNumber6[random(sizeof(CPFNumber6))][0], CPFNumber7[random(sizeof(CPFNumber7))][0], CPFNumber8[random(sizeof(CPFNumber8))][0], 
-		CPFNumber9[random(sizeof(CPFNumber9))][0], CPFNumber10[random(sizeof(CPFNumber10))][0], CPFNumber11[random(sizeof(CPFNumber11))][0]);
+	    new String[26], cpfNumber[11][2];
+		for(new i = 0; i < sizeof cpfNumber; i ++)
+    	valstr(cpfNumber[i], random(10));
+		format(String, sizeof(String), "%c%c%c.%c%c%c.%c%c%c-%c%c",
+    	cpfNumber[0], cpfNumber[1], cpfNumber[2],
+    	cpfNumber[3], cpfNumber[4], cpfNumber[5],
+    	cpfNumber[6], cpfNumber[7], cpfNumber[8],
+    	cpfNumber[9], cpfNumber[10]);
 		new String2[256];
 		format(String2, sizeof(String2), "CPF/Numeros/%s.ini", String);
 		if(!DOF2_FileExists(String2))
