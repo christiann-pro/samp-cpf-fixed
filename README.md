@@ -1,22 +1,18 @@
-# Sistema De CPF Fixo ~ SA:MP
-## Descrição do sistema
+# Fixed CPF System
+## System Description
 
-Sistema de CPF Fixo em textdraw, ao jogador conectar ao servidor automaticamente é criado um CPF e setado na cabeça dele, com 11 números exemplo:
+Fixed CPF system in textdraw, when connecting to the server, a CPF is automatically created and set in his head, with 11 numbers example:
 
 - 000.000.000-01
 
-No Salvamente foi ultilizado DOF2, é preciso criar a pasta "CPF" e dentro da pasta CPF adicionar a "Numeros" e "Player"!
+In Salvamente DOF2 was used, it is necessary to create a folder "CPF" and inside the CPF folder add the "Numeros" and "Player"!
 
-Para abrir o CPF em TextDraw, basta ultilizar o comando: /meucpf
+To open the CPF in TextDraw, just use the command: /meucpf
 
 ![ftcpf](https://user-images.githubusercontent.com/77468286/169407242-771325ce-a938-4bcc-a920-83dbfe521887.png)
 
-## includes ultilizadas
+## used includes
 DOF2 e ZCMD
 
-## Observações
-qualquer dúvida sobre o sistema ou ideia de melhorias, me contatar via discord: Griff#0101
-
-## Creditos
-
+## credits
 Christian13, Dpb.exe
