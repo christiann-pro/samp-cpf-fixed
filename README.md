@@ -9,8 +9,6 @@ In Salvamente DOF2 was used, it is necessary to create a folder "CPF" and inside
 
 To open the CPF in TextDraw, just use the command: /meucpf
 
-![ftcpf](https://user-images.githubusercontent.com/77468286/169407242-771325ce-a938-4bcc-a920-83dbfe521887.png)
-
 ## used includes
 DOF2 e ZCMD
 
