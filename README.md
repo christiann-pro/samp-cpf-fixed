@@ -19,4 +19,4 @@ qualquer dúvida sobre o sistema ou ideia de melhorias, me contatar via discord:
 
 ## Creditos
 
-Griff & Dpb.exe
+Christian13, Dpb.exe
