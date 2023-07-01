@@ -13,4 +13,4 @@ To open the CPF in TextDraw, just use the command: /meucpf
 DOF2 e ZCMD
 
 ## credits
-christivn12, Dpb.exe
+christivnmain, Dpb.exe
